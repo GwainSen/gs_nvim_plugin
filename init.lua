@@ -43,6 +43,7 @@ vim.lsp.config('luals', {
 
 vim.lsp.config('clangd', {
   cmd = {'clangd'},
+  init_options = { fallbackFlags = { "-std=c++26"} },
   filetypes = {'c','cpp'},
   root_markers = {},
 })
