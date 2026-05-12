@@ -48,5 +48,12 @@ vim.lsp.config('clangd', {
   root_markers = {},
 })
 
+vim.lsp.config('gopls', {
+  cmd = {'gopls'},
+  filetypes = {'go'},
+  root_markers = {},
+})
+
 vim.lsp.enable('luals')
 vim.lsp.enable('clangd')
+vim.lsp.enable('gopls')
